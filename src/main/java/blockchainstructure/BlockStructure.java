@@ -30,7 +30,7 @@ public class BlockStructure {
     public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchAlgorithmException, JSONException, java.text.ParseException, IOException {
         Blockchain blockchain = new Blockchain();
         blockchain.loadingBlocks();
-        // Let's Say Here's The Default Blocks (the 3 line e) :
+        // Let's Say Here's The Default Blocks (the 3 line below) :
         // GenesisBlock is added implicilty below ..
         blockchain.addBlock(new Block(1, "Hello", new Date())); // before it's added its index will be checked >> if there's a block added before with that index >> we can't addBlock
         blockchain.addBlock(new Block(2, "Blockchain", new Date()));
